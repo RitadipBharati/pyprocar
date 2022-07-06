@@ -63,6 +63,7 @@ def bandsplot(
     verbose=True,
     linewidth=1,
     repair=True,
+    figsize=(13,6)
 ):
     """This function plots band structures
   """
@@ -441,6 +442,7 @@ def bandsplot(
             plot_bar=plot_color_bar,
             ax=ax,
             linewidth=linewidth,
+            figsize=figsize
         )
         if fermi is not None:
             ax1.set_ylabel(r"$E-E_f$ [eV]")
